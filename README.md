@@ -49,3 +49,23 @@ sistema_academia/
 ## Conceitos aplicados
 POO (dataclasses), modularização, tratamento de exceções (`ErroNegocio`), validação de entrada,
 persistência de dados, testes automatizados e controle de versão com Git (branches e pull requests).
+
+## Demonstração
+
+Sistema em execução com dados de exemplo (`python main.py`):
+
+![Cadastros](docs/img/demo_cadastros.png)
+
+![Matrículas e relatório](docs/img/demo_matriculas_relatorio.png)
+
+![Validações e regras de negócio](docs/img/demo_validacoes.png)
+
+Testes automatizados:
+
+![Testes](docs/img/demo_testes.png)
+
+## Fluxo de trabalho (Git)
+
+- Branch principal: `main` (versão estável).
+- Novas funcionalidades e documentação são feitas em branches `feature/...` e integradas por Pull Request.
+- Mensagens de commit seguem o padrão `feat`, `fix`, `test`, `docs` e `chore`.
