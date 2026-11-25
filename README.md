@@ -3,9 +3,9 @@
 Projeto Avaliativo AV2 – sistema em Python (terminal) para gerenciar alunos, planos e matrículas de uma academia.
 
 ## Integrantes
-- Nome do integrante 1
-- Nome do integrante 2
-
+- Nome do integrante 1 Delosmar Lacerda dos Santos Filho
+- Nome do integrante 2 Jobson Francisco 
+ 
 ## Problema de negócio
 Muitas academias pequenas controlam alunos e mensalidades em papel ou planilhas, o que gera
 erros, matrículas duplicadas e falta de visão da receita. Este sistema centraliza o cadastro e
