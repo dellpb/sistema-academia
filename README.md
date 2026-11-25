@@ -3,8 +3,8 @@
 Projeto Avaliativo AV2 – sistema em Python (terminal) para gerenciar alunos, planos e matrículas de uma academia.
 
 ## Integrantes
-- Nome do integrante 1 Delosmar Lacerda dos Santos Filho
-- Nome do integrante 2 Jobson Francisco 
+-  Delosmar Lacerda dos Santos Filho
+- Jobson Francisco 
  
 ## Problema de negócio
 Muitas academias pequenas controlam alunos e mensalidades em papel ou planilhas, o que gera
@@ -43,10 +43,29 @@ sistema_academia/
 ├── tests/                     # testes automatizados (unittest)
 ├── data/                      # arquivos JSON gerados em execução
 ├── README.md
-├── GUIA_GIT.md
 └── requirements.txt
 ```
 
 ## Conceitos aplicados
 POO (dataclasses), modularização, tratamento de exceções (`ErroNegocio`), validação de entrada,
 persistência de dados, testes automatizados e controle de versão com Git (branches e pull requests).
+
+## Demonstração
+
+Sistema em execução com dados de exemplo (`python main.py`):
+
+![Cadastros](docs/img/demo_cadastros.png)
+
+![Matrículas e relatório](docs/img/demo_matriculas_relatorio.png)
+
+![Validações e regras de negócio](docs/img/demo_validacoes.png)
+
+Testes automatizados:
+
+![Testes](docs/img/demo_testes.png)
+
+## Fluxo de trabalho (Git)
+
+- Branch principal: `main` (versão estável).
+- Novas funcionalidades e documentação são feitas em branches `feature/...` e integradas por Pull Request.
+- Mensagens de commit seguem o padrão `feat`, `fix`, `test`, `docs` e `chore`.
