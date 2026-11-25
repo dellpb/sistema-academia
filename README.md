@@ -43,7 +43,6 @@ sistema_academia/
 ├── tests/                     # testes automatizados (unittest)
 ├── data/                      # arquivos JSON gerados em execução
 ├── README.md
-├── GUIA_GIT.md
 └── requirements.txt
 ```
 
