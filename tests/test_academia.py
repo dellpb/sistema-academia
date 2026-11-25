@@ -1,4 +1,3 @@
-import tempfile
 import unittest
 from datetime import date
 
@@ -25,11 +24,7 @@ class TestValidacoes(unittest.TestCase):
 
 class TestService(unittest.TestCase):
     def setUp(self):
-        self.pasta = tempfile.TemporaryDirectory()
-        self.svc = AcademiaService(self.pasta.name)
-
-    def tearDown(self):
-        self.pasta.cleanup()
+        self.svc = AcademiaService()
 
     def test_crud_aluno(self):
         a = self.svc.cadastrar_aluno("Maria Silva", CPF1, "11999998888")
@@ -59,10 +54,10 @@ class TestService(unittest.TestCase):
         self.assertEqual(self.svc.relatorio()["matriculas_ativas"], 0)
         self.svc.remover_aluno(a.id)
 
-    def test_persistencia(self):
+    def test_dados_somente_em_memoria(self):
         self.svc.cadastrar_plano("Mensal", 80, 1)
-        novo = AcademiaService(self.pasta.name)
-        self.assertEqual(len(novo.listar_planos()), 1)
+        novo = AcademiaService()  # nova instância começa vazia
+        self.assertEqual(novo.listar_planos(), [])
 
     def test_plano_invalido(self):
         with self.assertRaises(ErroNegocio):
